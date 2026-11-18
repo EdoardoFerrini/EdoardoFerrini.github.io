@@ -1,6 +1,6 @@
 # Neutron Universe blog: Quartz 5
 
-The blog at https://blog.neutronuniverse.com/, built with Quartz 5.0.0 (upstream v5 commit `97a2d05f80c4c50534959b1d0d41cc4b3895625e`) and styled with NTRN Solar House v4.0.0, which is vendored under `quartz/static/ntrn/` with its licenses and the local Fraunces and JetBrains Mono NL fonts.
+The blog at https://edoardoferrini.github.io/, built with Quartz 5.0.0 (upstream v5 commit `97a2d05f80c4c50534959b1d0d41cc4b3895625e`) using the default Quartz 5 palette and fonts.
 
 ## Content
 
@@ -18,7 +18,7 @@ Notes named `MM-DD-YY Title` are posts: the sync gives them `title` and `publish
 Requires Node 22+ and npm. From the parent repo:
 
 ```sh
-scripts/deploy_cloudflare.sh   # sync from the vault, build for blog.neutronuniverse.com, upload to Cloudflare Pages
+git push origin v5              # GitHub Pages builds and deploys via .github/workflows/deploy.yml
 ```
 
 Or by hand, from this directory:
@@ -26,10 +26,10 @@ Or by hand, from this directory:
 ```sh
 npm ci
 npx quartz plugin install
-BASE_URL='https://blog.neutronuniverse.com/' npx quartz build -o /absolute/output/directory
+BASE_URL='https://edoardoferrini.github.io/' npx quartz build -o /absolute/output/directory
 ```
 
-`BASE_URL` takes a full URL or a host plus path, and defaults to `blog.neutronuniverse.com`. For a path-mounted preview, use `BASE_URL='http://preview.example:8080/quartz/'` and serve the output at `/quartz/`. Quartz writes canonical and RSS links as HTTPS, even for an HTTP preview.
+`BASE_URL` takes a full URL or a host plus path, and defaults to `edoardoferrini.github.io`. For a path-mounted preview, use `BASE_URL='http://preview.example:8080/quartz/'` and serve the output at `/quartz/`. Quartz writes canonical and RSS links as HTTPS, even for an HTTP preview.
 
 ## Solar House presentation
 
