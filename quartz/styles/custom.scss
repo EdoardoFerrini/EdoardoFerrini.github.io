@@ -83,9 +83,11 @@ p { margin: var(--space-4) 0; }
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--space-4);
+  gap: var(--space-3);
   font-family: var(--bodyFont);
 }
+.page-header > header .header-links a { display: inline-flex; align-items: center; }
+.header-icon { display: block; width: 18px; height: 18px; }
 .page-header > header .flex-component {
   display: flex;
   align-items: center;
@@ -94,7 +96,7 @@ p { margin: var(--space-4) 0; }
   margin-left: auto;
   font-family: var(--bodyFont);
 }
-/* La search resta testuale; il toggle del tema usa l'icona nativa di Quartz. */
+/* Solo testo nella search; il toggle del tema usa l'icona nativa di Quartz. */
 .search-button svg { display: none !important; }
 :focus-visible { outline: 1px solid var(--secondary); outline-offset: var(--space-1); }
 
