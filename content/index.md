@@ -7,6 +7,6 @@ unlisted: true
 
 Minimal home page to preview the base theme.
 
-Episteme è un second brain che utilizza il metodo Zettelkasten.
+Episteme è un digital-garden organizzato in macro-aree, con note collegate tra loro utilizzando il metodo Zettelkasten.
 
-Doxa è un blog che parlerà di programmazione e altri argomenti.
+Doxa è un blog di riflessioni su software engineering, architetture distribuite, paradigmi di linguaggio e sviluppo web moderno.
