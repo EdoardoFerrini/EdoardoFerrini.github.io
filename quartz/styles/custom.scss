@@ -8,6 +8,27 @@
   --measure: 560px;
   --radius-sm: 8px;
   --radius-md: 16px;
+
+  --light: #fafbf8;
+  --lightgray: #e3e8dc;
+  --gray: #929b86;
+  --darkgray: #4b5540;
+  --dark: #29301f;
+  --secondary: #437100;
+  --tertiary: #7d9b47;
+  --highlight: rgba(67, 113, 0, 0.08);
+  --textHighlight: #dae8b8;
+}
+[saved-theme="dark"] {
+  --light: #14170f;
+  --lightgray: #2b3124;
+  --gray: #6b745f;
+  --darkgray: #c8d1bb;
+  --dark: #f0f4e8;
+  --secondary: #a8d56b;
+  --tertiary: #7d9b47;
+  --highlight: rgba(168, 213, 107, 0.12);
+  --textHighlight: #465c26;
 }
 
 :root, pre, pre > code {
