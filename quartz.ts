@@ -1,6 +1,6 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import { registerCondition } from "./quartz/plugins/loader/conditions"
-import { DateLine, PostList, isPost } from "./quartz/components/Site"
+import { DateLine, PostList, TagLine, isPost } from "./quartz/components/Site"
 import { HeaderLinks } from "./quartz/components/HeaderLinks"
 import { PageTypeDispatcher } from "./quartz/plugins/pageTypes"
 import { PagedPostsPageType } from "./quartz/plugins/pageTypes/pagedPosts"
@@ -23,7 +23,7 @@ header.splice(1, 0, HeaderLinks)
 export const layout = await loadQuartzLayout({
   defaults: {
     header,
-    beforeBody: [...(baseLayout.defaults.beforeBody ?? []), DateLine],
+    beforeBody: [...(baseLayout.defaults.beforeBody ?? []), DateLine, TagLine],
     afterBody: [PostList, ...(baseLayout.defaults.afterBody ?? [])],
     left: [],
     right: [],

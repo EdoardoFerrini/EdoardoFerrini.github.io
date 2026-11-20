@@ -118,6 +118,14 @@ h3, h4, h5, h6 { font-family: var(--bodyFont); font-size: 16px; line-height: 24p
 a, a:hover, a:visited { color: var(--secondary); text-decoration: underline; text-underline-offset: 3px; font-weight: 400; transition: none; }
 a.internal { background: none; border-radius: 0; padding: 0; }
 .site-title { text-decoration: none; }
+/* Tags stay inside /posts as a filter, with no separate tag section. */
+.tag-line { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: calc(var(--space-6) * -1) 0 var(--space-6); }
+.tag-line a, .tag-line a:hover, .tag-line a:visited { font-family: var(--codeFont); font-size: 12px; line-height: 18px; text-decoration: none; border: 1px solid var(--lightgray); border-radius: var(--radius-sm); padding: 1px 8px; color: var(--gray); }
+.tag-line a:hover { color: var(--secondary); border-color: var(--secondary); }
+.tag-filter { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-4) 0 0; }
+.tag-filter a, .tag-filter a:hover, .tag-filter a:visited { font-family: var(--codeFont); font-size: 12px; line-height: 18px; text-decoration: none; border: 1px solid var(--lightgray); border-radius: var(--radius-sm); padding: 2px 9px; color: var(--gray); }
+.tag-filter a:hover { color: var(--secondary); border-color: var(--secondary); }
+.tag-filter a.active, .tag-filter a.active:hover, .tag-filter a.active:visited { color: var(--secondary); border-color: var(--secondary); background: var(--highlight); }
 ::selection { background: var(--textHighlight); color: var(--darkgray); }
 em, strong { color: var(--dark); }
 strong { font-weight: 600; }

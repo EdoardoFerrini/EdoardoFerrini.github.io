@@ -1,4 +1,4 @@
-import { QuartzComponent } from "./types"
+﻿import { QuartzComponent } from "./types"
 import { joinSegments, pathToRoot } from "../util/path"
 
 // Keep the Episteme-style header, with the blog navigation restored next to the cross-link.
