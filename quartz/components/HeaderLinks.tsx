@@ -7,20 +7,13 @@ export const HeaderLinks: QuartzComponent = ({ fileData }) => {
   // No trailing slash on "posts": the SPA keeps the clicked URL, so /posts/ would make the
   // re-attached ./index.css resolve to /posts/index.css until a full reload.
   return <nav class="header-links" aria-label="site">
-    <a href={joinSegments(root, "posts")} aria-label="posts" title="posts">
+    <a href={joinSegments(root, "posts")}>posts</a>
+    <a class="header-link-right" href="https://edoardoferrini.github.io/second-brain" data-router-ignore="true" aria-label="second brain" title="second brain">
       <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M8 6h13M8 12h13M8 18h13" />
-        <circle cx="3.5" cy="6" r="1" />
-        <circle cx="3.5" cy="12" r="1" />
-        <circle cx="3.5" cy="18" r="1" />
-      </svg>
-    </a>
-    <a href="https://edoardoferrini.github.io/second-brain" data-router-ignore="true" aria-label="second brain" title="second brain">
-      <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="6" cy="12" r="3" />
-        <circle cx="18" cy="6" r="3" />
-        <circle cx="18" cy="18" r="3" />
-        <path d="M8.6 10.8 15.4 7.2M8.6 13.2l6.8 3.6" />
+        <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+        <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+        <path d="M12 18v-1.5" />
       </svg>
     </a>
     <a href={joinSegments(root, "index.xml")} aria-label="rss" title="rss">

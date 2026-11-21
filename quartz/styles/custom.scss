@@ -84,16 +84,17 @@ p { margin: var(--space-4) 0; }
   align-items: center;
   flex-wrap: wrap;
   gap: var(--space-3);
+  flex: 1;
   font-family: var(--bodyFont);
 }
 .page-header > header .header-links a { display: inline-flex; align-items: center; }
+.page-header > header .header-links .header-link-right { margin-left: auto; }
 .header-icon { display: block; width: 18px; height: 18px; }
 .page-header > header .flex-component {
   display: flex;
   align-items: center;
   flex-wrap: wrap !important;
   gap: var(--space-4) !important;
-  margin-left: auto;
   font-family: var(--bodyFont);
 }
 /* Solo testo nella search; il toggle del tema usa l'icona nativa di Quartz. */
