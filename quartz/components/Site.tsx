@@ -79,10 +79,13 @@ export const PostList: QuartzComponent = ({ fileData, allFiles }) => {
     .sort((a, b) => b.date.getTime() - a.date.getTime())
     .slice(0, HOME_POST_COUNT)
 
-  return <ul class="post-list">
-    {posts.map(({ f, date }) => <li>
-      <time dateTime={iso(date)}>{iso(date)}</time>
-      <a href={resolveRelative(fileData.slug!, f.slug!)}>{f.frontmatter?.title}</a>
-    </li>)}
-  </ul>
+  return <>
+    <h3>Ultimi post</h3>
+    <ul class="post-list">
+      {posts.map(({ f, date }) => <li>
+        <time dateTime={iso(date)}>{iso(date)}</time>
+        <a href={resolveRelative(fileData.slug!, f.slug!)}>{f.frontmatter?.title}</a>
+      </li>)}
+    </ul>
+  </>
 }
